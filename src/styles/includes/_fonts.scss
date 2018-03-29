@@ -1,0 +1,31 @@
+h1,
+h2,
+a,
+p {
+  font-family: $roboto;
+}
+
+h1 {
+ @include main-heading() ;
+}
+
+h2 {
+ @include sub-heading() ;
+}
+
+
+p {
+ @include sub-text() ;
+}
+
+span {
+  @include span() ;
+  margin-left: 10px;
+}
+
+@media only screen and (max-width: 767px) {
+
+  h1 {
+   @include main-heading-mobile() ;
+  }
+}

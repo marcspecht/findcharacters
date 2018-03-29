@@ -1,0 +1,28 @@
+
+
+#search_field {
+    padding: 15px;
+    font-size: 15px;
+    border: 1px solid $white;
+    float: left;
+    width: 100%;
+    color: #7C8191;
+    background-color: $white!important;
+    margin-top: 20px;
+    border-radius: 5px;
+    border-bottom: 3px solid $red ;
+    background: url('/app/dist/images/search-icon.svg') no-repeat right 15px center;
+}
+
+@media only screen and (max-width: 1024px) {
+    #search_field {
+      font-size: 10px;
+    }
+
+    #search_field {
+      background-color: $grey!important;
+      border: 1px solid $grey;
+      border-bottom: 3px solid $red ;
+    }
+
+}

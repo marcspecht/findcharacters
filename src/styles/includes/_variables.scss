@@ -1,0 +1,44 @@
+// Descriptive font variables
+$roboto: 'Roboto', sans-serif;
+$bold :300;
+
+// Descriptive color variables
+
+$white : #F4F5F9;
+$blue  : #252C41;
+$grey  : #DDDFE6;
+$red   : #F1404B;
+
+// Media queries
+
+$media_M : "only screen and (min-width: 30em)";
+$media_L : "only screen and (min-width: 62em)";
+
+@mixin main-heading() {
+    font-size: 30px;
+    font-weight: 700;
+    color: $red ;
+}
+
+@mixin main-heading-mobile() {
+    font-size: 40px;
+    font-weight: 700;
+    color: $red;
+}
+
+@mixin sub-heading() {
+    font-size: 30px;
+    font-weight: 700;
+    color: $blue;
+}
+
+@mixin sub-text() {
+    font-size: 12px;
+    font-weight: 400;
+    color: $blue;
+}
+@mixin span() {
+    font-size: 30px;
+    color: $blue;
+    font-weight: 700;
+}

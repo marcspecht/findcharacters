@@ -1,0 +1,48 @@
+$roboto: 'Roboto', sans-serif;
+
+$white : #F4F5F9;
+$blue  : #252C41;
+$grey  : #DDDFE6;
+$red   : #F1404B;
+
+table {
+    font-family: $roboto;
+    border-collapse: collapse;
+    width: 100%;
+    -webkit-box-shadow: 0 4px 10px 0 rgba(0,0,0,0.2);
+            box-shadow: 0 4px 10px 0 rgba(0,0,0,0.2);
+            border-collapse: collapse;
+        border-radius: 5px;
+        overflow: hidden;
+}
+
+td, th {
+    text-align: left;
+    padding: 15px;
+    font-weight: 300;
+}
+
+tr:nth-child(even) {
+    background-color:$grey;
+}
+
+.table-header {
+  background-color: $blue;
+  color: $white;
+}
+
+.tr-bottom {
+  border-bottom: 3px solid $red ;
+}
+
+tr {
+  background-color:$white;
+}
+@media only screen and (max-width: 768px) {
+  td,
+  th
+    {
+      font-size: 12px;
+    }
+
+}
