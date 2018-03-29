@@ -4,7 +4,7 @@
     <title>
         <?php $t['Ascii-codes']; ?>
     </title>
-    <link rel="stylesheet" href="ascii-app/dist/styles/style.min.css">
+    <link rel="stylesheet" href="findcharacters/dist/styles/style.min.css">
 </head>
 <body>
 
@@ -96,7 +96,7 @@
         </div>
         <div class="s-12 m-12 l-3 pg-b pg-t pg-l-r">
             <h1></h1>
-            <img class="google_ads" src="ascii-app/dist/images/google_ads.png" alt="">
+            <img class="google_ads" src="findcharacters/dist/images/google_ads.png" alt="">
         </div>
     </div>
 </div>

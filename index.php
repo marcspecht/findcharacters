@@ -33,5 +33,5 @@
 //    include 'lang/languages.php';
 //    $lang = substr($_SERVER['HTTP_ACCEPT_LANGUAGE'], 0, 2);
 //    $t = $text_translate[$lang];
-include 'ascii-app/index.php';
+include 'findcharacters/index.php';
 ?>
