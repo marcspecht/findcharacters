@@ -22,10 +22,10 @@ var gulp = require('gulp'),
 gulp.task('styles', function() {
   return sass('src/styles/style.scss', { style: 'expanded' })
     .pipe(autoprefixer('last 2 version'))
-    .pipe(gulp.dest('ascii-app/dist/styles'))
+    .pipe(gulp.dest('findcharacters/dist/styles'))
     .pipe(rename({ suffix: '.min' }))
     .pipe(cssnano())
-    .pipe(gulp.dest('ascii-app/dist/styles'))
+    .pipe(gulp.dest('findcharacters/dist/styles'))
     .pipe(notify({ message: 'Styles task complete' }));
 });
 
@@ -35,10 +35,10 @@ gulp.task('scripts', function() {
     .pipe(jshint('.jshintrc'))
     .pipe(jshint.reporter('default'))
     .pipe(concat('main.js'))
-    .pipe(gulp.dest('ascii-app/dist/scripts'))
+    .pipe(gulp.dest('findcharacters/dist/scripts'))
     .pipe(rename({ suffix: '.min' }))
     .pipe(uglify())
-    .pipe(gulp.dest('ascii-app/dist/scripts'))
+    .pipe(gulp.dest('findcharacters/dist/scripts'))
     .pipe(notify({ message: 'Scripts task complete' }));
 });
 
@@ -46,13 +46,13 @@ gulp.task('scripts', function() {
 gulp.task('images', function() {
   return gulp.src('src/images/**/*')
     .pipe(cache(imagemin({ optimizationLevel: 3, progressive: true, interlaced: true })))
-    .pipe(gulp.dest('ascii-app/dist/images'))
+    .pipe(gulp.dest('findcharacters/dist/images'))
     .pipe(notify({ message: 'Images task complete' }));
 });
 
 // Clean
 gulp.task('clean', function() {
-  return del(['ascii-app/dist/styles', 'ascii-app/dist/scripts', 'ascii-app/dist/images']);
+  return del(['findcharacters/dist/styles', 'findcharacters/dist/scripts', 'findcharacters/dist/images']);
 });
 
 // Default task
@@ -76,6 +76,6 @@ gulp.task('watch', function() {
   livereload.listen();
 
   // Watch any files in dist/, reload on change
-  gulp.watch(['ascii-app/dist/**']).on('change', livereload.changed);
+  gulp.watch(['findcharacters/dist/**']).on('change', livereload.changed);
 
 });
